@@ -5,3 +5,12 @@
 <div>https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/</div>
 <div>reclone https</div>
 <div>git config --global credential.helper "cache --timeout=1"</div>
+<div>今天在拿到新的iMac开发机器的时候直接使用旧笔记本copy过来的代码,提示帐号密码有问题.找了很多方法都不太管用.
+
+分别打开下面2个文件,将[User]部分完全删除后保存,再使用Git命令的时候就会提示输入帐号密码了.
+
+$ vi .git/config (工程当前路径的Git配置文件)
+
+$ vi ~/.gitconfig (全局的Git配置文件)
+
+</div>
